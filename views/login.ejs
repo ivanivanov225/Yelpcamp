@@ -1,0 +1,47 @@
+<%- include ("partials/default-main") %>
+<div class="container">
+	<div class="row">
+			<div class="login-container signup-login">
+				<div class="park-sign-svg park-sign-size-for-login-and-register p-5">
+					<form class="form-signin needs-validation mt-4" novalidate action="/login" method="POST">
+						
+						<div class="form-label-group fs-4">
+							<input id="inputUsername" class="form-control fs-4 <% if(error.length > 0) { %> is-invalid <% } %>" type="text" name="username" placeholder="Happy Camper" required autofocus />
+							<label for="inputUsername">Username</label>
+							<div class="valid-feedback"></div>
+							<% if(error.length > 0) { %>
+							<div class="invalid-feedback">
+								<%= error %>
+							</div>
+							<% } else { %>
+							<div class="invalid-feedback">
+								Please provide username.
+							</div>
+							<% } %>
+						</div>
+						
+						<div class="form-label-group fs-4 mt-4">
+							<input id="inputPassword" class="form-control fs-4 <% if(error.length > 0) { %> is-invalid <% } %>" type="password" name="password" placeholder="Super secret..." required />
+							<label for="inputPassword">Password</label>
+							<div class="valid-feedback"></div>
+							<% if(error.length > 0) { %>
+							<div class="invalid-feedback">
+								<%= error %>
+							</div>
+							<% } else { %>
+							<div class="invalid-feedback">
+								Please provide password.
+							</div>
+							<% } %>
+						</div>
+					
+						<div class="form-label-group text-center mt-5">
+							<button type="submit" class="btn btn-lg light-brown rounded-pill title-font fs-4 text-white w-75">Login</button>
+						</div>
+					</form>
+				</div>
+			</div>
+	</div>
+
+</div>
+<%- include ("partials/footer") %>
