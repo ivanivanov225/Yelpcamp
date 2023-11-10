@@ -1,7 +1,6 @@
 <div align="center">
   <img width="200" src="public/favicon/android-chrome-512x512.png" alt="YelpCamp logo">
 
-# [YelpCamp](https://www.yelpcamp.app/)
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fyelpcamp.app)
 ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fwww.yelpcamp.app)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5db672c308be3e556462/maintainability)](https://codeclimate.com/github/JacobGrisham/YelpCamp/maintainability)
